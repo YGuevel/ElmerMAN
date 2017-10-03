@@ -1,0 +1,40 @@
+! Exemple KEYWORDS
+Solver:Integer:     'Exemple Integer'
+Solver:Real:        'Exemple Real'
+Solver:String:      'Exemple String'
+Solver:Logical:     'Exemple Logical'
+Solver:File:        'Exemple File'
+!
+! ANM PARAMETER
+Solver:Integer:     'ANM Order'
+Solver:Real:        'ANM Tolerance'
+Solver:Integer:     'ANM Step'
+!
+! DIAG BIF
+Solver:Integer:     'ANM NodeOut'
+Solver:Integer:     'ANM NodeOutComp'
+Solver:Logical:     'ANM ResOUTornot'
+!
+!  Bif detection
+Solver:Logical:     'ANM Steady Bifurcation GeomDetection' 
+Solver:Real:        'ANM Steady Bifurcation GeomDetection EPSA'
+Solver:Real:        'ANM Steady Bifurcation GeomDetection EPSV'
+! When pitchfork bifurcation found : follow either SymBranch or fondam branch...
+Solver:Logical:     'ANM Bifurcation SYM BRANCH RESTART'
+!
+! OUT INFO
+Solver:Integer:     'ANM NBSolByStep'
+! Steady Bif indicator perturbation magnitude
+Solver:Real:        'ANM Steady Bifurcation Indicator Perturbation'
+!
+! RIKS CORRECTION TOLERANCE
+Solver:Real:        'ANM Steady RIKS Correction Tolerance'
+Solver:Integer:     'ANM Steady RIKS MAX ITERATION'
+!
+! HomeMade NEWTON STEADY CORRECTOR
+Solver:Real:        'ANM Steady NEWT Correction Tolerance'
+Solver:Integer:     'ANM Steady NEWT Correction MAXITER'
+Solver:Logical:     'ANM Steady USE NEWTON Correction'
+!
+! Ask for the linear solver procedure : home made with mumps or let ELMER
+Solver:Logical:     'ANM Use Elmer Linear Solver'
